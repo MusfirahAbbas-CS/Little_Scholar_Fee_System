@@ -3,7 +3,7 @@
 // Connects to FastAPI running on http://localhost:8000
 // ============================================================
 
-const BASE_URL = 'http://localhost:8000';
+const BASE_URL = 'https://little-scholar-fee-system.onrender.com';
 
 async function fetchAPI(endpoint, options = {}) {
   const res = await fetch(`${BASE_URL}${endpoint}`, {
