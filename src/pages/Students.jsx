@@ -316,9 +316,9 @@ export default function Students() {
                     <td>
                       <span style={{
                         fontFamily: 'monospace', fontSize: '0.8rem',
-                        background: 'rgba(139,92,246,0.1)', color: '#a78bfa',
+                        background: 'rgba(30,58,138,0.08)', color: '#1e3a8a',
                         padding: '0.2rem 0.5rem', borderRadius: 6,
-                        border: '1px solid rgba(139,92,246,0.2)',
+                        border: '1px solid rgba(30,58,138,0.15)',
                       }}>
                         {student.roll_number}
                       </span>

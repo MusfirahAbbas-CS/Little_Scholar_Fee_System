@@ -185,19 +185,19 @@ export default function Classes() {
               }}>
                 <div style={{
                   width: 32, height: 32, borderRadius: 8,
-                  background: 'linear-gradient(135deg, rgba(139,92,246,0.3), rgba(109,40,217,0.2))',
-                  border: '1px solid rgba(139,92,246,0.25)',
+                  background: 'linear-gradient(135deg, rgba(30,58,138,0.15), rgba(26,35,126,0.08))',
+                  border: '1px solid rgba(30,58,138,0.2)',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                 }}>
-                  <BookOpen size={16} color="#a78bfa" />
+                  <BookOpen size={16} color="#1e3a8a" />
                 </div>
                 <h2 style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: 700, fontSize: '1rem', color: 'var(--text-primary)' }}>
                   {name}
                 </h2>
                 <span style={{
-                  background: 'rgba(139,92,246,0.15)', color: '#a78bfa',
+                  background: 'rgba(30,58,138,0.08)', color: '#1e3a8a',
                   borderRadius: 999, padding: '0.125rem 0.625rem',
-                  fontSize: '0.7rem', fontWeight: 600, border: '1px solid rgba(139,92,246,0.25)',
+                  fontSize: '0.7rem', fontWeight: 600, border: '1px solid rgba(30,58,138,0.2)',
                 }}>
                   {sections.length} section{sections.length > 1 ? 's' : ''}
                 </span>
@@ -211,16 +211,16 @@ export default function Classes() {
                     {/* Gradient orb */}
                     <div style={{
                       position: 'absolute', top: -30, right: -30, width: 120, height: 120,
-                      borderRadius: '50%', background: 'rgba(139,92,246,0.08)',
+                      borderRadius: '50%', background: 'rgba(30,58,138,0.06)',
                       pointerEvents: 'none',
                     }} />
 
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
                       <div style={{
                         width: 44, height: 44, borderRadius: 12,
-                        background: 'linear-gradient(135deg, #8b5cf6, #6d28d9)',
+                        background: 'linear-gradient(135deg, #1e3a8a, #2563eb)',
                         display: 'flex', alignItems: 'center', justifyContent: 'center',
-                        boxShadow: '0 4px 15px rgba(139,92,246,0.3)',
+                        boxShadow: '0 4px 15px rgba(30,58,138,0.3)',
                       }}>
                         <GraduationCap size={22} color="white" />
                       </div>
@@ -247,12 +247,12 @@ export default function Classes() {
                     </div>
 
                     <div style={{
-                      background: 'rgba(139,92,246,0.08)', borderRadius: 10,
+                      background: 'rgba(30,58,138,0.06)', borderRadius: 10,
                       padding: '0.625rem 0.875rem', marginBottom: '1rem',
-                      border: '1px solid rgba(139,92,246,0.12)',
+                      border: '1px solid rgba(30,58,138,0.1)',
                     }}>
                       <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)', fontWeight: 500 }}>Base Monthly Fee</div>
-                      <div style={{ fontSize: '1.05rem', fontWeight: 800, color: '#a78bfa', fontFamily: 'Plus Jakarta Sans' }}>
+                      <div style={{ fontSize: '1.05rem', fontWeight: 800, color: '#1e3a8a', fontFamily: 'Plus Jakarta Sans' }}>
                         {formatCurrency(cls.base_tuition_fee)}
                       </div>
                     </div>

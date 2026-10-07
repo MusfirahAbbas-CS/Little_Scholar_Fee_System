@@ -79,8 +79,8 @@ function PaymentDrawer({ slip, onClose, onSuccess }) {
         <div className="drawer-body">
           {/* Balance Summary */}
           <div style={{
-            background: 'linear-gradient(135deg, rgba(139,92,246,0.15), rgba(109,40,217,0.1))',
-            border: '1px solid rgba(139,92,246,0.2)',
+            background: 'linear-gradient(135deg, rgba(30,58,138,0.08), rgba(26,35,126,0.05))',
+            border: '1px solid rgba(30,58,138,0.15)',
             borderRadius: 14, padding: '1.125rem', marginBottom: '1.5rem',
           }}>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
@@ -140,9 +140,9 @@ function PaymentDrawer({ slip, onClose, onSuccess }) {
                     style={{
                       padding: '0.625rem',
                       borderRadius: 10,
-                      border: `1px solid ${form.payment_method === value ? 'rgba(139,92,246,0.5)' : 'var(--border)'}`,
-                      background: form.payment_method === value ? 'rgba(139,92,246,0.15)' : 'var(--bg-base)',
-                      color: form.payment_method === value ? '#a78bfa' : 'var(--text-secondary)',
+                      border: `1px solid ${form.payment_method === value ? 'rgba(30,58,138,0.5)' : 'var(--border)'}`,
+                      background: form.payment_method === value ? 'rgba(30,58,138,0.1)' : 'var(--bg-base)',
+                      color: form.payment_method === value ? '#1e3a8a' : 'var(--text-secondary)',
                       cursor: 'pointer',
                       display: 'flex',
                       flexDirection: 'column',
@@ -453,7 +453,7 @@ export default function StudentDetail() {
       {/* Summary Cards */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', marginBottom: '2rem' }}>
         {[
-          { label: 'Total Billed', value: formatCurrency(totalBilled), color: '#8b5cf6', bg: 'rgba(139,92,246,0.1)', border: 'rgba(139,92,246,0.2)' },
+          { label: 'Total Billed', value: formatCurrency(totalBilled), color: '#1e3a8a', bg: 'rgba(30,58,138,0.08)', border: 'rgba(30,58,138,0.15)' },
           { label: 'Total Paid', value: formatCurrency(totalPaid), color: '#10b981', bg: 'rgba(16,185,129,0.1)', border: 'rgba(16,185,129,0.2)' },
           { label: 'Outstanding', value: formatCurrency(totalOutstanding), color: '#ef4444', bg: 'rgba(239,68,68,0.1)', border: 'rgba(239,68,68,0.2)' },
         ].map(({ label, value, color, bg, border }) => (

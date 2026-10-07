@@ -19,9 +19,9 @@ export default function Sidebar() {
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.625rem' }}>
           <div style={{
             width: 36, height: 36, borderRadius: 10,
-            background: 'linear-gradient(135deg, #8b5cf6, #6d28d9)',
+            background: 'linear-gradient(135deg, #1e3a8a, #2563eb)',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            boxShadow: '0 4px 15px rgba(139,92,246,0.4)',
+            boxShadow: '0 4px 15px rgba(30,58,138,0.35)',
             flexShrink: 0,
           }}>
             <GraduationCap size={20} color="white" />
@@ -58,14 +58,14 @@ export default function Sidebar() {
         margin: '0 0.75rem 0.75rem',
       }}>
         <div style={{
-          background: 'linear-gradient(135deg, rgba(139,92,246,0.15), rgba(109,40,217,0.1))',
-          border: '1px solid rgba(139,92,246,0.2)',
+          background: 'linear-gradient(135deg, rgba(30,58,138,0.08), rgba(37,99,235,0.05))',
+          border: '1px solid rgba(30,58,138,0.15)',
           borderRadius: 12,
           padding: '0.875rem',
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.375rem' }}>
-            <Sparkles size={14} color="#a78bfa" />
-            <span style={{ fontSize: '0.75rem', fontWeight: 600, color: '#a78bfa' }}>Academic Year</span>
+            <Sparkles size={14} color="#1e3a8a" />
+            <span style={{ fontSize: '0.75rem', fontWeight: 600, color: '#1e3a8a' }}>Academic Year</span>
           </div>
           <div style={{ fontSize: '0.875rem', fontWeight: 700, color: 'var(--text-primary)' }}>2026 – 2027</div>
           <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)', marginTop: '0.125rem' }}>

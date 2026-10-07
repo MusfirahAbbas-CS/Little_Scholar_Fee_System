@@ -77,9 +77,9 @@ function GenerateModal({ classes, onClose, onGenerate }) {
                   style={{
                     padding: '0.875rem',
                     borderRadius: 12,
-                    border: `1px solid ${mode === value ? 'rgba(139,92,246,0.5)' : 'var(--border)'}`,
-                    background: mode === value ? 'rgba(139,92,246,0.12)' : 'var(--bg-base)',
-                    color: mode === value ? '#a78bfa' : 'var(--text-secondary)',
+                    border: `1px solid ${mode === value ? 'rgba(30,58,138,0.5)' : 'var(--border)'}`,
+                    background: mode === value ? 'rgba(30,58,138,0.1)' : 'var(--bg-base)',
+                    color: mode === value ? '#1e3a8a' : 'var(--text-secondary)',
                     cursor: 'pointer',
                     display: 'flex', alignItems: 'center', gap: '0.75rem',
                     textAlign: 'left', transition: 'all 0.15s',
@@ -285,7 +285,7 @@ function PaymentDrawer({ slip, onClose, onSuccess }) {
           </div>
         </div>
         <div className="drawer-body">
-          <div style={{ background: 'rgba(139,92,246,0.1)', border: '1px solid rgba(139,92,246,0.2)', borderRadius: 12, padding: '1rem', marginBottom: '1.25rem' }}>
+          <div style={{ background: 'rgba(30,58,138,0.06)', border: '1px solid rgba(30,58,138,0.12)', borderRadius: 12, padding: '1rem', marginBottom: '1.25rem' }}>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
               {[
                 { l: 'Total', v: formatCurrency(slip.total_amount), c: 'var(--text-primary)' },
@@ -437,7 +437,7 @@ export default function FeeSlips() {
       {/* Summary Pills */}
       <div style={{ display: 'flex', gap: '0.75rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
         {[
-          { key: '', label: 'All', count: slips.length, color: '#8b5cf6' },
+          { key: '', label: 'All', count: slips.length, color: '#1e3a8a' },
           { key: 'paid', label: 'Paid', count: statusCounts.paid, color: '#10b981' },
           { key: 'partially_paid', label: 'Partial', count: statusCounts.partially_paid, color: '#f59e0b' },
           { key: 'unpaid', label: 'Unpaid', count: statusCounts.unpaid, color: '#ef4444' },

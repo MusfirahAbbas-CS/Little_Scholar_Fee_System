@@ -21,14 +21,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           position="top-right"
           toastOptions={{
             style: {
-              background: '#1e1e2e',
-              color: '#cdd6f4',
-              border: '1px solid rgba(139,92,246,0.3)',
+              background: '#ffffff',
+              color: '#0f172a',
+              border: '1px solid rgba(30,58,138,0.2)',
               borderRadius: '12px',
               fontSize: '14px',
+              boxShadow: '0 8px 24px rgba(30,58,138,0.12)',
             },
-            success: { iconTheme: { primary: '#a6e3a1', secondary: '#1e1e2e' } },
-            error: { iconTheme: { primary: '#f38ba8', secondary: '#1e1e2e' } },
+            success: { iconTheme: { primary: '#059669', secondary: '#ffffff' } },
+            error: { iconTheme: { primary: '#dc2626', secondary: '#ffffff' } },
           }}
         />
       </QueryClientProvider>

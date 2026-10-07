@@ -58,7 +58,7 @@ export default function Topbar() {
           <span style={{
             position: 'absolute', top: 4, right: 4,
             width: 8, height: 8, borderRadius: '50%',
-            background: '#8b5cf6',
+            background: '#2563eb',
             border: '2px solid var(--bg-surface)',
           }} />
         </button>
@@ -66,9 +66,10 @@ export default function Topbar() {
         {/* Admin Avatar */}
         <div style={{
           width: 36, height: 36, borderRadius: 10,
-          background: 'linear-gradient(135deg, #8b5cf6, #6d28d9)',
+          background: 'linear-gradient(135deg, #1e3a8a, #2563eb)',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           cursor: 'pointer', color: 'white', fontWeight: 700, fontSize: '0.8rem',
+          boxShadow: '0 2px 8px rgba(30,58,138,0.3)',
         }}>
           AD
         </div>

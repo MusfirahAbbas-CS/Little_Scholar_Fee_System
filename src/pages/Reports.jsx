@@ -96,7 +96,7 @@ export default function Reports() {
       {!loadingAnalytics && analytics && (
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1rem', marginBottom: '2rem' }}>
           {[
-            { label: 'Total Billed (All Time)', value: formatCurrency(analytics.totalBilled), color: '#8b5cf6', bg: 'rgba(139,92,246,0.1)', border: 'rgba(139,92,246,0.2)', icon: DollarSign },
+            { label: 'Total Billed (All Time)', value: formatCurrency(analytics.totalBilled), color: '#1e3a8a', bg: 'rgba(30,58,138,0.08)', border: 'rgba(30,58,138,0.15)', icon: DollarSign },
             { label: 'Total Collected', value: formatCurrency(analytics.totalCollected), color: '#10b981', bg: 'rgba(16,185,129,0.1)', border: 'rgba(16,185,129,0.2)', icon: TrendingDown },
             { label: 'Total Outstanding', value: formatCurrency(analytics.totalOutstanding), color: '#ef4444', bg: 'rgba(239,68,68,0.1)', border: 'rgba(239,68,68,0.2)', icon: AlertTriangle },
             { label: 'Collection Rate', value: `${analytics.collectionRate}%`, color: '#3b82f6', bg: 'rgba(59,130,246,0.1)', border: 'rgba(59,130,246,0.2)', icon: BarChart3 },
@@ -128,7 +128,7 @@ export default function Reports() {
           </div>
           <ResponsiveContainer width="100%" height={220}>
             <BarChart data={barData} margin={{ top: 5, right: 5, bottom: 0, left: 0 }} barSize={18}>
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(30,58,138,0.06)" />
               <XAxis dataKey="name" tick={{ fill: '#64748b', fontSize: 10 }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fill: '#64748b', fontSize: 10 }} axisLine={false} tickLine={false}
                 tickFormatter={v => `${(v/1000).toFixed(0)}k`} />
@@ -152,13 +152,13 @@ export default function Reports() {
           </div>
           <ResponsiveContainer width="100%" height={220}>
             <BarChart data={trendData} margin={{ top: 5, right: 5, bottom: 0, left: 0 }} barSize={18}>
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(30,58,138,0.06)" />
               <XAxis dataKey="name" tick={{ fill: '#64748b', fontSize: 10 }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fill: '#64748b', fontSize: 10 }} axisLine={false} tickLine={false}
                 tickFormatter={v => `${(v/1000).toFixed(0)}k`} />
               <Tooltip content={<CustomTooltip />} />
               <Legend wrapperStyle={{ fontSize: '11px' }} />
-              <Bar dataKey="Billed" fill="#8b5cf6" radius={[4, 4, 0, 0]} />
+              <Bar dataKey="Billed" fill="#1e3a8a" radius={[4, 4, 0, 0]} />
               <Bar dataKey="Collected" fill="#10b981" radius={[4, 4, 0, 0]} />
               <Bar dataKey="Outstanding" fill="#ef4444" radius={[4, 4, 0, 0]} />
             </BarChart>

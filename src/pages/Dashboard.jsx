@@ -132,7 +132,7 @@ export default function Dashboard() {
           value={formatCurrency(totalBilled)}
           subtitle={`${(paidCount + partialCount + unpaidCount)} fee slips`}
           icon={Wallet} colorClass="purple" trend={null}
-          iconBg="linear-gradient(135deg, #8b5cf6, #6d28d9)"
+          iconBg="linear-gradient(135deg, #1e3a8a, #2563eb)"
         />
         <StatCard
           title="Revenue Collected"
@@ -193,20 +193,20 @@ export default function Dashboard() {
             <AreaChart data={trendData} margin={{ top: 5, right: 5, bottom: 0, left: 0 }}>
               <defs>
                 <linearGradient id="gradBilled" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#8b5cf6" stopOpacity={0.3} />
-                  <stop offset="95%" stopColor="#8b5cf6" stopOpacity={0} />
+                  <stop offset="5%" stopColor="#1e3a8a" stopOpacity={0.2} />
+                  <stop offset="95%" stopColor="#1e3a8a" stopOpacity={0} />
                 </linearGradient>
                 <linearGradient id="gradCollected" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="5%" stopColor="#10b981" stopOpacity={0.3} />
                   <stop offset="95%" stopColor="#10b981" stopOpacity={0} />
                 </linearGradient>
               </defs>
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(30,58,138,0.06)" />
               <XAxis dataKey="name" tick={{ fill: '#64748b', fontSize: 11 }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fill: '#64748b', fontSize: 11 }} axisLine={false} tickLine={false} tickFormatter={v => `${(v/1000).toFixed(0)}k`} />
               <Tooltip content={<CustomTooltip />} />
               <Legend wrapperStyle={{ fontSize: '12px', color: '#94a3b8' }} />
-              <Area type="monotone" dataKey="Billed"    stroke="#8b5cf6" strokeWidth={2} fill="url(#gradBilled)" />
+              <Area type="monotone" dataKey="Billed"    stroke="#1e3a8a" strokeWidth={2} fill="url(#gradBilled)" />
               <Area type="monotone" dataKey="Collected" stroke="#10b981" strokeWidth={2} fill="url(#gradCollected)" />
             </AreaChart>
           </ResponsiveContainer>
